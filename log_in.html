@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+
+    <title>Log In Page</title>
+</head>
+<body>
+    <div class="log-in container text-center">
+        <img class="logo" src="imgs/logo.png" alt="logo">
+        <p class="welcome">Sign In to OVLY!</p>
+        <p class="instruction">Enter Email addres and Password to sign-in</p>
+        <div class="info">
+          
+            <div class="input-contaier">
+                <input type="email" id="email">
+                <label class="control-label" for="email">E-mail</label>
+            </div>
+            
+            <div class="input-contaier">
+                <input type="password" id="password">
+                <label class="control-label" for="password">Password</label>
+            </div>
+         
+            <p class="forgot-pass">Forgot password?  <a href="forget_password.html">Click Here</a></p>
+            <a class="big-btn bg-dark " href="#">Sign In</a>
+            <p>Don't have OVLY card?  <a href="sign-up.html" class="get-card fw-bold">Get Your Card!</a></p>
+
+        </div>
+    </div>
+
+    <script>
+        let inputs = document.querySelectorAll("input");
+        for(let i=0 ; i < inputs.length ; i++){
+            inputs[i].addEventListener('focus',()=>{
+                inputs[i].parentElement.children[1].classList.add('focus-label')
+            })
+        }
+    </script>
+</body>
+</html>

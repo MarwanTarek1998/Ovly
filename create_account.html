@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Create Account Page</title>
+</head>
+<body>
+    <div class="create-account container ">
+        <div class="logo-container">
+            <img src="imgs/logo1.png" alt="logo1">
+            <a  class="big-btn bg-dark" href="edit_account.html">Save</a>
+        </div>
+        <p class="text-center fw-bold">Create an Account</p>
+        
+        <div class="info">
+            <img src="imgs/profile_pc.png" alt="" class="profile-pc">
+            <img src="imgs/upload_ph.png" alt="" class="upload-photo">
+
+            <div class="user-info">
+                <p class="title">User’s Information <img src="imgs/Arrow.png" alt="Arrow"></p>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="fname" value="Anna-Lisa ">
+                    <label class="focus-label" for="fname">First Name</label>
+                    <img src="imgs/edit.png" alt="edit" class="edit-icon">
+                </div>
+
+                <div class="input-contaier">
+                    <input class="input" type="text" id="lname" value="Strongblossom">
+                    <label class="focus-label" for="lname">Last Name</label>
+                    <img src="imgs/edit.png" alt="edit" class="edit-icon">
+                </div>
+
+                <div class="input-contaier">
+                    <input class="input" type="text" id="headline">
+                    <label class="control-label" for="headline">Headline/ Designation</label>
+                </div>
+
+                <div class="input-contaier">
+                    <input class="input" type="text" id="username">
+                    <label class="control-label" for="email">Create username</label>
+                </div>
+
+                <p class="hint">ovly.me/<span>username</span> </p>
+
+                <div class="input-contaier">
+                    <textarea  id="aboutme"  cols="10" rows="5"></textarea>
+                    <label class="control-label" for="aboutme">About me (250 character max)</label>
+                </div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="contact-info">
+                <p class="title">Contact Information  <img src="imgs/Arrow.png" alt="Arrow"></p>
+
+                <div class="input-contaier">
+                    <input class="input" type="tel" id="phone">
+                    <label class="control-label" for="phone">Phone</label>
+                </div>
+
+                <div class="input-contaier tag-menu">
+                    <input class="input-menu" type="text" id="menu" value="Choose a tag" disabled>
+                    <img src="imgs/menu_arrow.png" alt="menu_arrow" class="menu-arrow" id="menu-arrow">
+                    <div class="menu">
+                        <p data-value="Mobile">Mobile</p>
+                        <p data-value="Work">Work</p>
+                        <p data-value="Home">Home</p>
+                        <p class="custom-tag" data-value="Custom">Custom</p>
+                    </div>
+                    <div class="custom-popup">
+                        <div class="input-contaier">
+                            <input class="input" type="text" id="custom">
+                            <label class="control-label" for="custom">Custom</label>
+                        </div>
+                        <div class="btn-group">
+                            <a class="ok-btn big-btn bg-dark" href="">Ok</a>
+                            <a class="cancel-btn big-btn bg-dark" href="">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-btn">
+                    <img src="imgs/add.png" alt="add">
+                    <p>Add Number</p>
+                </div>
+
+                <div class="input-contaier">
+                    <input class="input" type="email" id="email">
+                    <label class="control-label" for="email">E-mail</label>
+                </div>
+
+                <div class="input-contaier tag-menu">
+                    <input class="input-menu" type="text" id="menu" value="Choose a tag" disabled>
+                    <img src="imgs/menu_arrow.png" alt="menu_arrow" class="menu-arrow" id="menu-arrow">
+                    <div class="menu">
+                        <p data-value="Personal">Personal</p>
+                        <p data-value="Work">Work</p>
+                        <p class="custom-tag" data-value="Custom">Custom</p>
+                    </div>
+                    <div class="custom-popup">
+                        <div class="input-contaier">
+                            <input class="input" type="text" id="custom">
+                            <label class="control-label" for="custom">Custom</label>
+                        </div>
+                        <div class="btn-group">
+                            <a class="ok-btn big-btn bg-dark" href="">Ok</a>
+                            <a class="cancel-btn big-btn bg-dark" href="">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-btn">
+                    <img src="imgs/add.png" alt="add">
+                    <p>Add E-mail</p>
+                </div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="social-media">
+                <p class="title">Social Media  <img src="imgs/Arrow.png" alt="Arrow"></p>
+               <div class="input-group">
+                    <div class="input-contaier">
+                        <input class="input" type="text" id="link">
+                        <label class="control-label" for="link">Paste link</label>
+                    </div>
+                    <div class="input-contaier social-container-menu">
+                        <input class="input-menu" type="text" id="menu" disabled>
+                        <img src="imgs/menu_arrow.png" alt="menu_arrow" class="menu-arrow" id="social-arrow">
+                        <div class="social-menu">
+                            <img src="imgs/Facebook.png" alt="">
+                            <img src="imgs/insta.png" alt="">
+                            <img src="imgs/twiter.png" alt="">
+                            <img src="imgs/linkedin.png" alt="">
+                            <img src="imgs/snap.png" alt="">
+                            <img src="imgs/tiktok.png" alt="">
+                            <img src="imgs/p.png" alt="">
+                            <img src="imgs/t.png" alt="">
+                            <img src="imgs/twodot.png" alt="">
+                            <img src="imgs/qura.png" alt="">
+                            <img src="imgs/m.png" alt="">
+                            <img src="imgs/sm.png" alt="">
+                        </div>
+                    </div>
+               </div>
+               <div class="add-btn">
+                <img src="imgs/add.png" alt="add">
+                <p>Add Social Media</p>
+                <div class="shape"></div>
+            </div>
+            </div>
+
+            <div class="links">
+                <p class="title">Links  <img src="imgs/Arrow.png" alt="Arrow"></p>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="title">
+                    <label class="control-label" for="title">Title</label>
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="http">
+                    <label class="control-label" for="http">Link</label>
+                    <img src="imgs/upload_ph.png" alt="upload_link_ph" class="upload-link-ph">
+                </div>
+                <div class="add-btn">
+                    <img src="imgs/add.png" alt="add">
+                    <p>Add Link</p>
+                </div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="videos">
+                <p class="title">Videos  <img src="imgs/Arrow.png" alt="Arrow"></p>
+                <p class="instruction">Publishing from Vimeo, YouTube </p>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="video-title">
+                    <label class="control-label" for="video-title">Title</label>
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="url">
+                    <label class="control-label" for="url">Add YouTube or Vimeo URL</label>
+                </div>
+                <div class="add-btn">
+                    <img src="imgs/add.png" alt="add">
+                    <p>Add Video</p>
+                </div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="address">
+                <p class="title">Address  <img src="imgs/Arrow.png" alt="Arrow"></p>
+               
+                <div class="input-contaier">
+                    <input class="input" type="text" id="st-addr">
+                    <label class="control-label" for="st-addr">Street Address</label>
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="home">
+                    <label class="control-label" for="home">Apartment/ House</label>
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="city">
+                    <label class="control-label" for="city">City*</label>
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="state">
+                    <label class="control-label" for="state">State*</label>
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="text" id="zipcode">
+                    <label class="control-label" for="zipcode">Zipcode*</label>
+                </div>
+                <div class="input-contaier tag-menu">
+                    <input class="input-menu" type="text" id="menu" value="Choose a tag" disabled>
+                    <img src="imgs/menu_arrow.png" alt="menu_arrow" class="menu-arrow" id="menu-arrow">
+                    <div class="menu">
+                        <p data-value="Mobile">Mobile</p>
+                        <p data-value="Work">Work</p>
+                        <p data-value="Home">Home</p>
+                        <p data-value="Custom">Custom</p>
+                    </div>
+                </div>
+                <div class="add-btn">
+                    <img src="imgs/add.png" alt="add">
+                    <p>Add Address</p>
+                </div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="settings">
+                <p class="title">Settings <img src="imgs/Arrow.png" alt="Arrow"></p>
+               
+                <div class="input-contaier">
+                    <input class="input" type="email" id="e-maill" value="goodanna@gmail.com">
+                    <label class="focus-label" for="e-maill">E-mail</label>
+                    <img src="imgs/edit.png" alt="edit" class="edit-icon">
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="password" id="pass" value="123456789">
+                    <label class="focus-label" for="pass">Password</label>
+                    <img src="imgs/edit.png" alt="edit" class="edit-icon">
+                </div>
+                <div class="input-contaier">
+                    <input class="input" type="password" id="confirm-pass" value="123456789">
+                    <label class="focus-label" for="confirm-pass">Confirm Password</label>
+                    <img src="imgs/edit.png" alt="edit" class="edit-icon">
+                </div>
+                <div class="shape"></div>
+            </div>
+
+            <a class="delete-account">Delete Account</a>
+            <a href="index.html" class="logout">Logout</a>
+
+            <a href="edit_account.html" class="publish big-btn bg-dark">Publish Profile</a>
+        </div>
+    </div>
+
+    <script>
+        let inputs = document.querySelectorAll(".input");
+        for(let i=0 ; i < inputs.length ; i++){
+            inputs[i].addEventListener('focus',()=>{
+                inputs[i].parentElement.children[1].classList.add('focus-label')
+            })
+        }
+
+        let textareas = document.querySelectorAll("textarea");
+        textareas[0].addEventListener('focus',()=>{
+            textareas[0].parentElement.children[1].classList.add('focus-label')
+        })
+
+        let menuArrow = document.querySelectorAll("#menu-arrow")
+        for(let i=0 ; i < menuArrow.length ; i++){
+            menuArrow[i].parentElement.addEventListener('click',()=>{
+                let menu = menuArrow[i].parentElement.getElementsByClassName("menu")[0]
+                let style = getComputedStyle(menu)
+                style.display == "none" ? menu.style.display = "block" : menu.style.display = "none"
+            })
+        }
+
+        let menus = document.querySelectorAll(".menu");
+        for(let i = 0 ; i < menus.length ;i++){
+            let paragraphs = menus[i].getElementsByTagName("p")
+
+            for(let j = 0 ; j < paragraphs.length ;j++){
+                paragraphs[j].addEventListener('click',()=>{
+                    menus[i].parentElement.getElementsByClassName("input-menu")[0].setAttribute("value",paragraphs[j].getAttribute("data-value"))
+                })
+            }
+        }
+
+        let socialArrow = document.querySelectorAll("#social-arrow")[0]
+        socialArrow.parentElement.addEventListener('click',()=>{
+                let socialmenu = socialArrow.parentElement.getElementsByClassName("social-menu")[0]
+                let socialstyle = getComputedStyle(socialmenu)
+                socialstyle.display == "none" ? socialmenu.style.display = "flex" : socialmenu.style.display = "none"
+            })
+
+        let customTags = document.querySelectorAll(".custom-tag")
+        for(let i = 0 ; i < customTags.length ;i++){
+            customTags[i].addEventListener('click',()=>{
+                let popup = customTags[i].parentElement.parentElement.getElementsByClassName("custom-popup")[0]
+                popup.style.display = "block"
+            })
+        }
+
+        let okBtns = document.querySelectorAll(".custom-popup .btn-group .ok-btn")
+        let cancelBtns = document.querySelectorAll(".custom-popup .btn-group .cancel-btn")
+        for(let i = 0 ; i < okBtns.length ;i++){
+            okBtns[i].addEventListener('click',()=>{
+                okBtns[i].parentElement.parentElement.style.display = "none"
+            })
+            cancelBtns[i].addEventListener('click',()=>{
+                cancelBtns[i].parentElement.parentElement.style.display = "none"
+            })
+        }
+    </script>
+</body>
+</html>

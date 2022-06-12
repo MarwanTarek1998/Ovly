@@ -1,0 +1,808 @@
+:root{
+    --black-color : #303030;
+    --dark-color : #064663;
+    --main-dark-color : #40A2D9;
+    --main-light-color : #7FC9E7;
+    --light-color : #E5F3F6;
+    --gray-color : #AEAEAE;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* component */
+.container{
+    width: 375px;
+    margin: auto;
+    box-shadow: -5px -3px 21px rgba(0, 0, 0, 0.13);
+}
+.big-btn{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 34px;
+    margin: auto;
+    transition: .3s;
+    box-shadow: 3px 3px 16px 0px #15638D5E;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+}
+.bg-dark{
+    background-color: var(--dark-color);
+}
+.bg-light{
+    background-color: var(--light-color);
+}
+
+.input-contaier{
+    width: 280px;
+    margin: auto;
+    position: relative;
+    margin-top: 10px;
+}
+input,textarea{
+    width: 280px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-bottom: 1px solid var(--main-dark-color);
+    color: var(--black-color);
+    font-size: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+textarea{
+    resize: none;
+    padding-top: 20px;
+}
+label{
+    font-size: 15px;
+    color: var(--main-light-color);
+    position: absolute;  
+    padding-left: 20px;
+    padding-top: 14px;
+    transition: .3s;
+    left: 0;
+}
+.focus-label{
+    padding: 0;
+    color: var(--dark-color);
+    font-weight: 700;
+    top: -5px;
+}
+.input-contaier .edit-icon,
+.input-contaier .menu-arrow,
+.input-contaier .upload-link-ph{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+.input-contaier .menu-arrow{
+    top: 30px;
+}
+.input-contaier .upload-link-ph{
+    top: 5px;
+    right: 0;
+}
+.menu{
+    color: var(--main-dark-color);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.17);
+    border-radius:0 0 8px 8px;
+    transition: .3s;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+.menu p{
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: white;
+}
+.menu p:last-child{
+    border-radius:0 0 8px 8px;
+}
+.menu p:hover{
+    background-color: #E5F3F6;
+}
+/* component */
+
+/*Start*/
+.start{
+    background-image: url("imgs/Background.png");
+    background-size: cover;
+    color: white;
+    padding-bottom: 88px;
+}
+.start .logo,
+.log-in .logo,
+.sign-up .logo,
+.sign-up2 .logo,
+.sign-up3 .logo{
+    margin:90px auto  98px;
+}
+.start .welcome,
+.log-in .welcome,
+.sign-up .welcome,
+.sign-up2 .welcome,
+.sign-up3 .welcome{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.start .big-btn{
+    margin-top: 65px;
+    margin-bottom: 197px;
+    color: var(--main-dark-color);
+}
+.start .big-btn:hover{
+    background-color: #DAF1F5;
+    color: var(--dark-color);
+    box-shadow: none;
+}
+.start .get-card{
+    margin-right: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+/*Start*/
+
+/*log in*/
+.log-in,
+.sign-up,
+.sign-up2,
+.sign-up3{
+    background-image: url("imgs/Background.png");
+    background-size: cover;
+    color: white; 
+}
+.log-in .instruction{
+    width: 273px;
+    margin: auto;
+}
+
+.log-in .info,
+.sign-up .info,
+.sign-up2 .info,
+.sign-up3 .info{
+    background-color: white;
+    margin-top: 50px;
+    padding: 50px 0;
+    color: var(--black-color);
+    border-radius: 50px 50px 0 0;
+}
+.log-in .info .forgot-pass{
+    font-size: 13px;
+    margin: 15px 0 36px 65px;
+    text-align: left;
+}
+.log-in .info .forgot-pass a{
+    margin-right: 5px;
+    color: var(--main-dark-color);
+    text-decoration: underline var(--main-dark-color);
+    cursor: pointer;
+}
+.log-in .big-btn,
+.sign-up .big-btn,
+.sign-up2 .big-btn,
+.sign-up3 .big-btn{
+    color: white;
+    margin-bottom: 35px;
+}
+.log-in .big-btn:hover,
+.sign-up .big-btn:hover,
+.sign-up2 .big-btn:hover,
+.sign-up3 .big-btn:hover{
+    background-color: var(--black-color);
+    box-shadow: none;
+}
+.log-in .get-card,
+.sign-up3 .term-condition{
+    color: var(--main-dark-color);
+    margin-right: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*log in*/
+
+/*forget passowrd*/
+.forget-password{
+    background: white;
+    padding-bottom: 80px;
+}
+.forget-password .logo{
+    margin: 21px 0px 70px 12px;
+}
+.forget-password .forget-password-txt{
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+.forget-password .instruction{
+    padding: 0px 61px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+.forget-password .big-btn{
+    margin-top: 31px;
+    margin-bottom: 200px;
+    color: var(--main-dark-color);
+    background: var(--light-color);
+    box-shadow: none;
+}
+.forget-password .big-btn:hover{
+    background: #DAF1F5;
+}
+.forget-password .return{
+    color: var(--main-dark-color);
+    text-decoration: underline;
+    display: block;
+}
+/*forget passowrd*/
+
+/*check email*/
+.check-email{
+    background: white;
+    padding-bottom: 80px;
+}
+.check-email .logo{
+    margin: 0px 0px 160px 12px;
+    padding-top: 21px;
+    display: block;
+}
+.check-email .check-email-txt{
+    font-size: 32px;
+    margin-top: 65px;
+    margin-bottom: 9px;
+}
+.check-email .instruction{
+    padding: 0 43px;
+    margin-bottom: 129px;
+}
+.check-email .return{
+    color: var(--main-dark-color);
+    text-decoration: underline;
+    display: block;
+}
+/*check email*/
+
+/*sign up*/
+.sign-up .welcome{
+    margin-bottom: 35px;
+}
+.sign-up .big-btn,
+.sign-up2 .big-btn,
+.sign-up3 .big-btn{
+    margin-top: 30px;
+}
+.sign-up .line,
+.sign-up2 .line,
+.sign-up3 .line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #BAE4F4;
+    margin-top: 35px;
+    position: relative;
+}
+.sign-up .line::before,
+.sign-up2 .line::before,
+.sign-up3 .line::before{
+    content: "";
+    position: absolute;
+    background-color: #BAE4F4;
+    width: 209px;
+    height: 1px;
+    top: -10px;
+    left: 48%;
+    transform: translateX(-50%);
+}
+.sign-up .line .name{
+    color: white;
+    font-weight: bold;
+}
+.sign-up .line .name,
+.sign-up .line .email,
+.sign-up .line .password,
+.sign-up2 .line .name,
+.sign-up2 .line .email,
+.sign-up2 .line .password,
+.sign-up3 .line .name,
+.sign-up3 .line .email,
+.sign-up3 .line .password{
+    position: relative;
+}
+.sign-up .line .name::before,
+.sign-up .line .email::before,
+.sign-up .line .password::before,
+.sign-up2 .line .name::before,
+.sign-up2 .line .email::before,
+.sign-up2 .line .password::before,
+.sign-up3 .line .name::before,
+.sign-up3 .line .email::before,
+.sign-up3 .line .password::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -12px;
+}
+.sign-up .line .email::before,
+.sign-up .line .password::before{
+    background: #BAE4F4;
+}
+
+/*sign up*/
+
+/*sign up2*/
+.sign-up2 .line .name{
+    color: white;
+}
+.sign-up2 .line .email{
+    color: white;
+    font-weight: bold;
+}
+.sign-up2 .line .password::before{
+    background: #BAE4F4;
+}
+/*sign up2*/
+
+
+/*sign up3*/
+.sign-up3 .line .name,
+.sign-up3 .line .email{
+    color: white;
+}
+.sign-up3 .line .password{
+    color: white;
+    font-weight: bold;
+}
+.sign-up3 .terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.sign-up3 .term-condition{
+    margin-left: 5px;
+}
+.sign-up3 .terms img{
+    margin-right: 8px;
+}
+/*sign up3*/
+
+/*craete account*/
+.create-account,
+.edit-account{
+    background-image: url("imgs/Background.png");
+    background-size: cover;
+    color: white;
+}
+.create-account .logo-container ,
+.edit-account .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 22px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #4EB6DE;
+}
+.create-account .logo-container .big-btn,
+.edit-account .logo-container .big-btn{
+    width: 100px;
+    height: 40px;
+    color: white;
+    box-shadow: none;
+    margin: 0px;
+}
+.create-account .logo-container .big-btn:hover,
+.edit-account .logo-container .big-btn:hover{
+    background-color: var(--black-color);
+}
+.create-account .logo-container + p,
+.edit-account .logo-container + p{
+    font-size: 22px;
+}
+.create-account .info,
+.edit-account .info{
+    background-color: white;
+    margin-top: 60px;
+    padding-top: 100px;
+    color: var(--black-color);
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    padding-bottom: 60px;
+}
+.create-account .info .profile-pc,
+.edit-account .info .profile-pc{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+}
+.create-account .info .upload-photo
+{
+    position: absolute;
+    right: 110px;
+    top: 40px;
+}
+.create-account .info .title,
+.edit-account .info .title{
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--black-color);
+    margin: 0 0 20px 47.5px;
+}
+.create-account .info .title img,
+.edit-account .info .title img{
+    position: relative;
+    bottom: 2px;
+}
+.create-account .info .user-info,
+.edit-account .info .user-info{
+    position: relative;
+    margin-bottom: 45px;
+}
+.create-account .info .user-info::after,
+.create-account .info .contact-info::after,
+.create-account .info .social-media::after,
+.create-account .info .links::after,
+.create-account .info .videos::after,
+.create-account .info .address::after,
+.create-account .info .settings::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 1px;
+    background-color: #99D8F1;
+    top: 11px;
+    left: 28px;
+}
+.create-account .info .user-info::before,
+.create-account .info .contact-info::before,
+.create-account .info .social-media::before,
+.create-account .info .links::before,
+.create-account .info .videos::before,
+.create-account .info .address::before,
+.create-account .info .settings::before{
+    content: "";
+    position: absolute;
+    height: 94%;
+    width: 1px;
+    background-color: #99D8F1;
+    left: 28px;
+    top: 11px;
+}
+.create-account .info .contact-info::before{
+    height: 93%;
+}
+.create-account .info .links::before{
+    height: 88%;
+}
+.create-account .info .social-media::before{
+    height: 83%;
+}
+.create-account .info .videos::before{
+    height: 89%;
+}
+.create-account .info .address::before{
+    height: 95%;
+}
+.create-account .info .settings::before{
+    height: 89%;
+}
+.create-account .info .user-info .shape,
+.create-account .info .contact-info .shape,
+.create-account .info .social-media .shape,
+.create-account .info .links .shape,
+.create-account .info .videos .shape,
+.create-account .info .address .shape,
+.create-account .info .settings .shape{
+    position: absolute;
+    width: 13px;
+    height: 1px;
+    background-color: #99D8F1;
+    bottom: 15px;
+    left: 28px;
+}
+.create-account .info .user-info .hint,
+.edit-account .info .user-info .hint{
+    color: #2A88BD;
+    margin: 0 0 15px 47.5px;
+}
+.create-account .info .user-info .hint span,
+.edit-account .info .user-info .hint span{
+    color: rgba(58, 115, 182, 0.41);
+}
+.create-account .info .contact-info,
+.create-account .info .social-media,
+.create-account .info .links,
+.create-account .info .videos,
+.create-account .info .address,
+.edit-account .info .contact-info,
+.edit-account .info .social-media,
+.edit-account .info .links,
+.edit-account .info .videos,
+.edit-account .info .address{
+    position: relative;
+    margin-bottom: 40px;
+}
+.create-account .info .tag-menu input,
+.edit-account .info .tag-menu input{
+    padding-top: 10px;
+    color: var(--main-dark-color);
+}
+
+.create-account .info .add-btn,
+.edit-account .info .add-btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 47.5px 0;
+    margin-bottom: 25px;
+    color: var(--main-dark-color);
+    cursor: pointer;
+}
+.create-account .info .add-btn img,
+.edit-account .info .add-btn img{
+    margin-right: 7px;
+}
+.create-account .info .social-media .input-contaier,
+.create-account .info .social-media .input-contaier input,
+.edit-account .info .social-media .input-contaier,
+.edit-account .info .social-media .input-contaier input{
+    width: 225px;
+}
+.create-account .info .social-media .social-container-menu,
+.create-account .info .social-media .social-container-menu input,
+.edit-account .info .social-media .social-container-menu,
+.edit-account .info .social-media .social-container-menu input{
+    width: 61px;
+}
+.create-account .info .social-media .input-group,
+.edit-account .info .social-media .input-group
+{
+    display: flex;
+    padding: 0 0 0 47px;
+}
+.create-account .info .social-media .input-group .social-container-menu .social-menu,
+.edit-account .info .social-media .input-group .social-container-menu .social-menu
+{
+    width: 226px;
+    display: flex;
+    padding: 20px 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.17);
+    position: absolute;
+    border-radius: 6px;
+    z-index: 2;
+    right: 0;
+    display: none;
+}
+.create-account .info .social-media .input-group .social-container-menu .social-menu img,
+.edit-account .info .social-media .input-group .social-container-menu .social-menu img{
+    cursor: pointer;
+}
+.create-account .info .videos .instruction,
+.edit-account .info .videos .instruction{
+    color: #6A6A6A;
+    padding: 0 47.5px;
+    margin-bottom: 10px;
+}
+.create-account .info .settings,
+.edit-account .info .settings{
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.create-account .info .delete-account,
+.create-account .info .logout,
+.edit-account .info .delete-account,
+.edit-account .info .logout{
+    color:#40A2D9;
+    text-decoration: underline var(--main-dark-color);
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+.create-account .info .delete-account,
+.edit-account .info .delete-account{
+    margin-bottom: 18px;
+}
+.create-account .info .logout,
+.edit-account .info .logout{
+    margin-bottom: 40px;
+}
+.create-account .info .publish,
+.edit-account .info .save{
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+}
+.create-account .info .publish:hover,
+.edit-account .info .save:hover{
+    box-shadow: none;
+    background-color: var(--black-color);
+}
+.create-account .custom-popup,
+.edit-account .custom-popup{
+    width: 315px;
+    padding: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.17);
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: -15px;
+    display: none;
+}
+.create-account .custom-popup .btn-group,
+.edit-account .custom-popup .btn-group{
+    display: flex;
+    margin-top: 18px;
+}
+.create-account .custom-popup .btn-group .ok-btn,
+.edit-account .custom-popup .btn-group .ok-btn{
+    width: 135px;
+    height: 40px;
+    background-color: #E5F3F6;
+    color: var(--dark-color);
+    box-shadow: none;
+}
+.create-account .custom-popup .btn-group .cancel-btn,
+.edit-account .custom-popup .btn-group .cancel-btn{
+    width: 135px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--dark-color);
+    box-shadow: none;
+}
+
+/*craete account*/
+
+/*edit account*/
+.edit-account .info .change-photo{
+    color:#40A2D9;
+    text-decoration: underline var(--main-dark-color);
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.edit-account .info{
+    padding-top: 80px;
+}
+
+.edit-account .info .user-info::after,
+.edit-account .info .contact-info::after,
+.edit-account .info .social-media::after,
+.edit-account .info .links::after,
+.edit-account .info .videos::after,
+.edit-account .info .address::after,
+.edit-account .info .settings::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 1px;
+    background-color: #99D8F1;
+    top: 11px;
+    left: 28px;
+}
+
+.edit-account .info .user-info::before,
+.edit-account .info .contact-info::before,
+.edit-account .info .social-media::before,
+.edit-account .info .links::before,
+.edit-account .info .videos::before,
+.edit-account .info .address::before,
+.edit-account .info .settings::before{
+    content: "";
+    position: absolute;
+    height: 94%;
+    width: 1px;
+    background-color: #99D8F1;
+    left: 28px;
+    top: 11px;
+}
+.edit-account .info .contact-info::before{
+    height: 95%;
+}
+.edit-account .info .links::before{
+    height: 92%;
+}
+.edit-account .info .social-media::before{
+    height: 83%;
+}
+
+.edit-account .info .videos::before{
+    height: 95%;
+}
+
+.edit-account .info .address::before{
+    height: 95%;
+}
+
+.edit-account .info .settings::before{
+    height: 89%;
+}
+
+.edit-account .info .user-info .shape,
+.edit-account .info .contact-info .shape,
+.edit-account .info .social-media .shape,
+.edit-account .info .links .shape,
+.edit-account .info .videos .shape,
+.edit-account .info .address .shape,
+.edit-account .info .settings .shape{
+    position: absolute;
+    width: 13px;
+    height: 1px;
+    background-color: #99D8F1;
+    bottom: 15px;
+    left: 28px;
+}
+
+.edit-account .info .links .links-container{
+    margin: 10px 47.5px;
+}
+.edit-account .info .links .links-container .link-item{
+    display: flex;
+    align-items: center;
+}
+.edit-account .info .links .links-container .link-item .link-img{ margin-right: 5px; }
+.edit-account .info .links .links-container .link-item .link-title{ margin-right: 7px;}
+.edit-account .info .links .links-container .link-item .link-delete{ padding-top: 5px;}
+
+.edit-account .info .links .big-btn{
+    box-shadow: none;
+    color: #40A2D9;
+    border: 1px solid;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.edit-account .info .videos .resume,
+.edit-account .info .videos .award{
+    color: #064663;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px 47.5px;
+}
+
+.edit-account .info .videos .resume img,
+.edit-account .info .videos .award img
+{
+    position: relative;
+    bottom: 2px;
+}
+
+.edit-account .info .videos .video-img{
+    margin: 20px 21px 0px 35px;
+}
+/*edit account*/
